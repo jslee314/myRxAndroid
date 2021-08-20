@@ -39,32 +39,41 @@ dependencies {
 
 
     // rxJava 2.x
-    compile 'io.reactivex.rxjava2:rxjava:2.2.7'
-    compile 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     // rxJava 1.x -> 2.x
-    compile 'com.github.akarnokd:rxjava2-interop:0.9.1'
+    implementation 'com.github.akarnokd:rxjava2-interop:0.9.1'
+
     // rxlifecycle 2.x : rxJava를 사용하는 안드로이드 앱용 라이프사이클 처리 api
-    compile 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
-    compile 'com.trello.rxlifecycle2:rxlifecycle-android:2.1.0'
-    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-android:2.1.0'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+
     // rxbinding : 안드로이드 UI 위젯용 rxjava 바인딩 api
-    compile 'com.jakewharton.rxbinding:rxbinding:1.0.0'
-    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
-    compile 'com.jakewharton.timber:timber:4.4.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding:1.0.0'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    implementation 'com.jakewharton.timber:timber:4.4.0'
 
     // butterknife
-    compile 'com.jakewharton:butterknife:10.2.3'
+    implementation 'com.jakewharton:butterknife:10.2.3'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
 
     // okhttp
-    compile 'com.squareup.okhttp3:okhttp:3.6.0'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
 
     // retrofit
-    compile 'com.squareup.retrofit2:retrofit:2.2.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+
+    // Lombok Library
+    def lombok_ver = "1.18.16"
+    implementation "org.projectlombok:lombok:$lombok_ver"
+    annotationProcessor "org.projectlombok:lombok:$lombok_ver"
 
 
+    // volley
+    implementation 'com.android.volley:volley:1.1.0'
 
 }

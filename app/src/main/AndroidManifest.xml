@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--<activity android:name=".activities.AsyncTaskActivity">-->
+        <!--<activity android:name=".activities.TimerActivity">-->
+        <!--<activity android:name=".MainActivity">-->
+
     </application>
 
 </manifest>
