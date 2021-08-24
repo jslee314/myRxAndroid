@@ -1,5 +1,6 @@
 package com.jslee.myrxandroid.activities;
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -69,6 +70,7 @@ public class AsyncTaskActivity extends AppCompatActivity {
     }
 
 
+    @SuppressLint("CheckResult")
     private void initRxAsync() {
         Observable.just("Hello", "rx", "world")
                 .reduce((x,y) -> x + " " + y)
