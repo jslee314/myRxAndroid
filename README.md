@@ -1,4 +1,4 @@
-# [1]  RxAndroid 소개
+# [1] RxAndroid 소개
 RxAndroid는 RxJava에 최소한의 클래스를 추가하여 안드로이드 앱에서 리액티브 구성 요소를 쉽고 간편하게 사용하게 만드는 라이브러리입니다. 
 다음 특징을 통해 해결해준다. 
 
@@ -13,7 +13,7 @@ RxAndroid는 RxJava에 최소한의 클래스를 추가하여 안드로이드 �
 
 
 
-# [2]  RxAndroid 기본
+# [2] RxAndroid 기본
 RxAndroid의 기본 개념은 RxJava와 동일합니다.
 RxJava의 구조에 안드로이드의 각 컴포넌트를 사용할 수 있게 변경해 놓은 것입니다.
 따라서 RxAndroid의 구송 요소는 다음처럼 RxJava의 구성 요소와 같습니다.
@@ -22,7 +22,7 @@ RxJava의 구조에 안드로이드의 각 컴포넌트를 사용할 수 있게 
 - 스케줄러 : 스케줄러를 통해서 Observable, 구독자가 어느 스레드에서 실행될지 결정
 
 
-# [3]  RxAndroid 활용
+# [3] RxAndroid 활용
 1) 리액티브 RecyclerView
 
 RecyclerView 클래스
@@ -46,7 +46,7 @@ Volly 라이브러리 활용
 
 Retrofit2 + OKHttp 활용하기
 
-# [4]  메모리 누수
+# [4] 메모리 누수
 
 해결책 1: Disposable 인터페이스를 이용함여 명시적으로 자원 해제
 해결책 2: RxLifecycle 라이브러리 이용
